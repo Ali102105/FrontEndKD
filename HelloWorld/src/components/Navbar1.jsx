@@ -8,9 +8,6 @@ function Navbar() {
         <nav className="navbar navbar-expand-lg">
           <div className="container">
             <a className="navbar-brand alteco-brand" href="#home">
-              <span className="brand-icon" aria-hidden="true">
-                
-              </span>
 
               <span>
                 <strong>Ali</strong>
