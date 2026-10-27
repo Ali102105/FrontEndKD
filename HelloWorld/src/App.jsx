@@ -5,6 +5,7 @@ import Hero from "./components/Hero.jsx";
 import Offers from "./components/Offers.jsx";
 import Services from "./components/Services.jsx";
 import Footer from "./components/Footer.jsx";
+import BackToTop from "./components/BackToTop.jsx";
 
 function App() {
   return (
@@ -18,14 +19,7 @@ function App() {
       </main>
 
       <Footer />
-
-      <a
-        className="back-to-top"
-        href="#home"
-        aria-label="Terug naar boven"
-      >
-        ↑
-      </a>
+      <BackToTop />
     </>
   );
 }
