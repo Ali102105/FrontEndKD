@@ -1,5 +1,5 @@
 import "./App.css";
-
+import "./components/BackToTop.css"
 import Navbar from "./components/Navbar1.jsx";
 import Hero from "./components/Hero.jsx";
 import Offers from "./components/Offers.jsx";

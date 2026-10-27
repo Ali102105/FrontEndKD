@@ -56,13 +56,13 @@ function Navbar() {
                 </li>
 
                 <li className="nav-item">
-                  <span className="nav-link">BLOG</span>
+                  <span className="nav-link" href="#">BLOG</span>
                 </li>
 
                 <li className="nav-item">
                   <a
                     className="nav-link"
-                    href="mailto:infoyoursite@mail.com"
+                    href="#"
                   >
                     CONTACT US
                   </a>

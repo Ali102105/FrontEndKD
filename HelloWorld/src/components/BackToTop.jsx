@@ -7,7 +7,7 @@ function BackToTop() {
       href="#home"
       aria-label="Terug naar boven"
     >
-      Omhoog
+      <span className="back-to-top-arrow" aria-hidden="true"></span>
     </a>
   );
 }
