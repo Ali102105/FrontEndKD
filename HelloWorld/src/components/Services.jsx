@@ -2,25 +2,21 @@ import "./Services.css";
 
 const services = [
   {
-    icon: "♧",
     title: "PROMOTION AGENCY",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dolore tempor incididunt ut labore.",
   },
   {
-    icon: "⚒",
     title: "CONSTRUCTIONS BUILDING",
     description:
       "Non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem minima.",
   },
   {
-    icon: "▤",
     title: "EDUCATION ONLINE",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dolore tempor incididunt ut labore.",
   },
   {
-    icon: "⇧",
     title: "FASHION DESIGN",
     description:
       "Non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem minima.",
@@ -57,10 +53,6 @@ function Services() {
               className="col-12 col-md-6 col-lg-3 service-card"
               key={service.title}
             >
-              <div className="service-icon" aria-hidden="true">
-                {service.icon}
-              </div>
-
               <p className="section-label">TUTORIALS TO HELP</p>
 
               <h3>{service.title}</h3>
