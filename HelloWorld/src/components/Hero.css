@@ -6,7 +6,7 @@
   color: white;
   background-image:
     linear-gradient(90deg, rgb(0 0 0 / 55%), rgb(0 0 0 / 10%)),
-    url("/images/hero.jpg");
+    url("../assets/hero1.png");
   background-position: center;
   background-size: cover;
 }

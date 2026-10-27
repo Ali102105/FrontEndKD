@@ -3,14 +3,16 @@
 }
 
 .offers-image {
-  display: block;
   width: 100%;
   height: 100%;
   min-height: 750px;
-  object-fit: cover;
+  background-image: url("../assets/Foto2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.offers-content {
+.offers-section .offers-content {
   padding: 90px 50px;
 }
 
@@ -79,10 +81,10 @@
   .offers-image {
     height: 450px;
     min-height: 0;
-    object-position: center 35%;
+    background-position: center 35%;
   }
 
-  .offers-content {
+  .offers-section .offers-content {
     padding: 60px 40px;
   }
 }
@@ -92,7 +94,7 @@
     height: 320px;
   }
 
-  .offers-content {
+  .offers-section .offers-content {
     padding: 45px 24px;
   }
 

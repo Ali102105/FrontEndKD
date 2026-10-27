@@ -18,35 +18,29 @@ const offers = [
 function Offers() {
   return (
     <section className="offers-section" id="offers">
-      <div className="container-fluid">
+      <div className="container-fluid p-0">
         <div className="row g-0">
           <div className="col-12 col-lg-6">
-            <img
+            <div
               className="offers-image"
-              src="/images/offers.jpg"
-              alt="Twee collega's bekijken samen een tablet"
-              loading="lazy"
-            />
+              role="img"
+              aria-label="Twee collega's bekijken samen een tablet"
+            ></div>
           </div>
 
           <div className="col-12 col-lg-6 offers-content">
-            <p className="section-label">
-              ELABORATED CODE AND CREATIVE DESIGN
-            </p>
+            <p className="section-label">ELABORATED CODE AND CREATIVE DESIGN</p>
 
             <h2>WHAT WE OFFERS</h2>
 
             <blockquote>
-              Duis sed odio sit amet nibh vulputate cursus a sit amet
-              mauris ipsuy veli. Nam nec tellus a odio tincidunt auctor.
+              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris
+              ipsuy veli. Nam nec tellus a odio tincidunt auctor.
             </blockquote>
 
             <div className="row g-4 offers-grid">
               {offers.map((offer) => (
-                <article
-                  className="col-12 col-md-6"
-                  key={offer.title}
-                >
+                <article className="col-12 col-md-6" key={offer.title}>
                   <span className="offer-icon" aria-hidden="true">
                     {offer.icon}
                   </span>
