@@ -1,0 +1,125 @@
+.topbar {
+  padding: 18px 0;
+  color: white;
+  background-color: #333;
+}
+
+.topbar-content,
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.topbar-content {
+  justify-content: space-between;
+}
+
+.topbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.quote-button {
+  padding: 12px 28px;
+  border-radius: 30px;
+  background-color: var(--alteco-blue);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 8%);
+}
+
+.site-header .navbar {
+  min-height: 110px;
+}
+
+.alteco-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  color: var(--alteco-blue);
+  font-size: 58px;
+  line-height: 1;
+}
+
+.alteco-brand strong {
+  display: block;
+  color: #111;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.alteco-brand small {
+  display: block;
+  color: #111;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.site-header .navbar-nav {
+  gap: 16px;
+}
+
+.site-header .nav-link {
+  color: #292929;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.site-header a.nav-link:hover,
+.site-header .nav-link.active {
+  color: var(--alteco-blue);
+}
+
+@media (max-width: 991.98px) {
+  .site-header .navbar {
+    min-height: 85px;
+  }
+
+  .site-header .navbar-nav {
+    gap: 4px;
+    padding: 18px 0;
+  }
+
+  .site-header .nav-link {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .topbar-content {
+    justify-content: center;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13px;
+  }
+
+  .quote-button {
+    display: none;
+  }
+
+  .brand-icon {
+    font-size: 46px;
+  }
+
+  .alteco-brand strong {
+    font-size: 24px;
+  }
+
+  .alteco-brand small {
+    font-size: 12px;
+  }
+}
