@@ -1,5 +1,4 @@
 import "./Offers.css";
-
 const offers = [
   {
     title: "Clean Modern Code",
@@ -38,6 +37,7 @@ function Offers() {
               mauris ipsuy veli. Nam nec tellus a odio tincidunt auctor.
             </blockquote>
 
+            
             <div className="row g-4 offers-grid">
               {offers.map((offer) => (
                 <article

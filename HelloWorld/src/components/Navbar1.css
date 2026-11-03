@@ -1,99 +1,154 @@
+
 .site-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: white;
-  box-shadow: 0 1px 5px rgb(0 0 0 / 8%);
 }
+
 .site-header .navbar {
   min-height: 150px;
+  max-width: 100%;
+  margin: 0 auto;
   padding: 20px 0;
+  background-color: white;
 }
+
+@supports (animation-timeline: scroll()) {
+  .site-header .navbar {
+    animation: navbar-kleiner linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0px 100px;
+  }
+}
+
+@keyframes navbar-kleiner {
+  from {
+    min-height: 150px;
+    max-width: 100%;
+    padding: 20px 0;
+  }
+  to {
+    min-height: 100px;
+    max-width: 1512px;
+    padding: 10px 0;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 12%);
+  }
+}
+
 .alteco-brand {
   margin-right: 40px;
   text-decoration: none;
 }
+
 .alteco-brand strong {
   display: block;
   color: #111;
   font-size: 28px;
   font-weight: 800;
-  letter-spacing: 1px;
 }
+
 .alteco-brand small {
   display: block;
   color: #111;
   font-size: 14px;
-  font-weight: 600;
 }
+
 .site-header .navbar-nav {
   align-items: center;
   gap: 18px;
 }
+
 .site-header .nav-link {
   padding: 12px 0;
   border: 0;
   color: #292929;
   background: transparent;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: bold;
   white-space: nowrap;
 }
+
 .site-header .home-link,
 .site-header a.nav-link:hover,
 .site-header button.nav-link:hover {
-  color: var(--alteco-blue);
+  color: #1054e8;
 }
+
 .site-header .unavailable-link {
   cursor: not-allowed;
 }
+
 .site-header .dropdown-menu {
   min-width: 190px;
-  border: 1px solid #eee;
   border-radius: 0;
-  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
 }
+
 .site-header .dropdown-item {
   padding: 12px 20px;
   font-size: 14px;
 }
-.site-header .dropdown-item:hover {
-  color: var(--alteco-blue);
-  background: #f5f5f5;
+
+.nav-search-decoration {
+  position: relative;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin: 0 20px 0 40px;
+  border: 3px solid #292929;
+  border-radius: 50%;
 }
+
+.nav-search-decoration::after {
+  position: absolute;
+  right: -6px;
+  bottom: -4px;
+  width: 8px;
+  height: 3px;
+  background-color: #292929;
+  content: "";
+  transform: rotate(45deg);
+}
+
 @media (max-width: 1199.98px) {
   .site-header .navbar-nav {
     gap: 10px;
   }
+
   .site-header .nav-link {
     font-size: 12px;
   }
+
   .alteco-brand {
     margin-right: 20px;
   }
 }
+
 @media (max-width: 991.98px) {
   .site-header .navbar {
     min-height: 85px;
     padding: 15px 0;
+    animation: none;
   }
+
   .site-header .navbar-collapse {
-    max-height: calc(100dvh - 100px);
+    max-height: 75vh;
     overflow-y: auto;
   }
+
   .site-header .navbar-nav {
     align-items: stretch;
     gap: 0;
     padding: 15px 0;
   }
+
   .site-header .nav-link {
-    display: block;
     width: 100%;
     padding: 10px 0;
     text-align: left;
     font-size: 14px;
   }
-  .site-header .dropdown-menu {
-    box-shadow: none;
+
+  .nav-search-decoration {
+    display: none;
   }
 }

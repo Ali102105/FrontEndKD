@@ -6,7 +6,6 @@ import Offers from "./components/Offers.jsx";
 import Services from "./components/Services.jsx";
 import Footer from "./components/Footer.jsx";
 import BackToTop from "./components/BackToTop.jsx";
-
 function App() {
   return (
     <>
