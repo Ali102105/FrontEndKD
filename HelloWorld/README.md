@@ -1,16 +1,40 @@
-# React + Vite
+# Ali's Website — Alteco
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React-website met Bootstrap 5 en losse componenten.
 
-Currently, two official plugins are available:
+## Starten
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Open deze map (de map met package.json) in VS Code en voer uit:
 
-## React Compiler
+```bash
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Open daarna de lokale URL uit de terminal. `npm install` is nodig na het uitpakken: node_modules wordt niet meegestuurd. Hiermee wordt ook Vite geïnstalleerd.
 
-## Expanding the ESLint configuration
+Gebruik een recente Node.js LTS-versie (Node 24 aanbevolen).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Controleren
+
+```bash
+npm run lint
+npm run build
+```
+
+## Onderdelen
+
+- Topbar: contactgegevens en offerteknop.
+- Navbar1: Bootstrap-navigatie, dropdown en mobiel hamburgermenu.
+- Search: zoeken tussen de bestaande onderdelen van de pagina.
+- Hero, Offers, Services en Footer: inhoud met responsive Bootstrap-grid.
+- BackToTop: omhoogknop met CSS-pijl, zonder emoji.
+
+HOME, ABOUT US, SERVICES en CONTACT US verwijzen naar bestaande secties.
+PAGES bevat links naar diezelfde secties. SHOP en BLOG blijven zichtbaar voor
+het ontwerp, maar zijn uitgeschakeld omdat deze pagina's nog niet bestaan.
+De e-mail en het telefoonnummer zijn voorbeeldgegevens uit het ontwerp;
+vervang ze door je eigen contactgegevens voordat je de site echt gebruikt.
+
+Bootstrap wordt vóór de eigen CSS geladen. Afbeeldingen staan in src/assets.
+De achtergrondafbeeldingen worden vanuit Hero.css en Offers.css ingeladen.

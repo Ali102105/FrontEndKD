@@ -31,18 +31,7 @@
   text-align: center;
 }
 
-.service-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90px;
-  height: 90px;
-  margin: 0 auto 32px;
-  border-radius: 50%;
-  color: white;
-  background-color: var(--alteco-blue);
-  font-size: 42px;
-}
+
 
 .service-card h3 {
   margin-bottom: 22px;

@@ -1,5 +1,5 @@
 import "./App.css";
-import "./components/BackToTop.css"
+import Topbar from "./components/Topbar.jsx";
 import Navbar from "./components/Navbar1.jsx";
 import Hero from "./components/Hero.jsx";
 import Offers from "./components/Offers.jsx";
@@ -10,6 +10,7 @@ import BackToTop from "./components/BackToTop.jsx";
 function App() {
   return (
     <>
+      <Topbar />
       <Navbar />
 
       <main>
