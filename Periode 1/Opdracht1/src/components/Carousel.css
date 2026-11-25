@@ -1,0 +1,28 @@
+.carousel-control-next-icon {
+  background-color: #000;
+}
+
+.carousel-control-prev-icon {
+  background-color: #000;
+}
+
+.carouselTitle {
+  margin-bottom: 120px;
+  background-color: #0b57e3;
+  font-weight: 600;
+  font-size: 35px;
+  width: 600px;
+  height: 65px;
+  align-content: center;
+}
+
+.carouselParagraph {
+  margin-bottom: 270px;
+  background-color: black;
+  font-weight: 600;
+  height: 65px;
+  width: 700px;
+  align-content: center;
+  font-weight: 600;
+  font-size: 25px;
+}

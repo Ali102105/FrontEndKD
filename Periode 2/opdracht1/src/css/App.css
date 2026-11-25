@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: #333;
+}
+
+#carouselExample {
+  width: 100%;
+}
+
+#carouselExample .carousel-item img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  height: auto;
+  object-fit: cover;
+}
+
+#card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 120px;
+}
+
+.Card {
+  height: 75px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+.Card2 {
+  height: 75px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+@media (max-width: 575.98px) {
+  #card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.container-fluid {
+  margin-right: 100px;
+}
