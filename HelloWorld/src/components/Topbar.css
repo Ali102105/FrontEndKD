@@ -1,0 +1,19 @@
+.topbar {
+  padding: 18px 0;
+  color: white;
+  background: #333;
+}
+.topbar a { color: white; text-decoration: none; }
+.topbar .quote-button {
+  padding: 11px 32px;
+  border-color: var(--alteco-blue);
+  background: var(--alteco-blue);
+  font-size: 14px;
+  font-weight: 700;
+}
+.topbar .quote-button:hover { background: #0845c7; }
+@media (max-width: 575.98px) {
+  .topbar { padding: 12px 0; }
+  .topbar-contact { font-size: 12px; }
+  .topbar .quote-button { display: none; }
+}
